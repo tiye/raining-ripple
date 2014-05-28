@@ -1,6 +1,7 @@
 
 body {
     margin: 0;
+    background: black;
 }
 
 * {
@@ -24,6 +25,8 @@ body {
     -webkit-transform-origin: center;
     -webkit-animation-name: rain;
     -webkit-animation-iteration-count: infinite;
+    opacity: 0.5;
+    box-shadow: 0 0 30px white;
 }
 
 @-webkit-keyframes rain {
@@ -31,7 +34,8 @@ body {
         -webkit-transform: scale(0);
     }
     50% {
-        -webkit-transform: scale(1.1);
+        -webkit-transform: scale(1.2);
+        opacity: 0.2;
     }
     100% {
         -webkit-transform: scale(0);

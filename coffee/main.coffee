@@ -8,7 +8,7 @@ unit =
   h: 40
 
 random = ->
-  (Math.random() * 13).toFixed() + 700
+  (Math.random() * 1000 * 13) + 1300
 
 makeRow = (n) ->
   [1..n].map -> random()
