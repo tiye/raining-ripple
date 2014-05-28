@@ -1,0 +1,39 @@
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#app {}
+
+.row {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.box {
+    width: 40px;
+    height: 40px;
+    background: rgb(230, 230, 230);
+    -webkit-transform-origin: center;
+    -webkit-animation-name: rain;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes rain {
+    0% {
+        -webkit-transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(0);
+    }
+}
